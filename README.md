@@ -1,2 +1,5 @@
-# Blackjack-Monte-Carlo-Method
-Using the Monte Carlo method to determine the expected return as a function of the count and number of cards that have been played 
+When playing Blackjack, players make a bet before the cards have been dealt to them. The reason why counting cards is a popular method to earn abnormal returns is that the expected return of a given hand should change as a function of the prevailing count and roughly the number of cards that have been played. I wanted to investigate this relationship more in-depth by applying the Monte Carlo method. 
+
+The approach is to simulate hundreds of thousands of Blackjack hands being played and code simple algorithms for how both the players and dealer would act. The decisions of the player can be modeled through a Blackjack strategy chart, which can be easily found online. Dealers continue to hit until their total is 17 or above. 
+
+After each hand is played, the result, the number of cards that have been played, and the count are recorded. A pivot is used as a means to create a heatmap that illustrates the relationship between the number of cards played, the count, and the expected return based on a bet of one.
